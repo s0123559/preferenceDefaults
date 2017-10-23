@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="preferenceDefaults" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uo-ux-OPZ">
+                                <rect key="frame" x="142" y="232" width="91" height="30"/>
+                                <state key="normal" title="save settings"/>
+                                <connections>
+                                    <action selector="myButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WlF-wo-HWz"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RoJ-A6-cQC">
+                                <rect key="frame" x="139" y="53" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="vPo-hb-lz5"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="95H-vN-kxT">
+                                <rect key="frame" x="163" y="137" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RoJ-A6-cQC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2e8-K6-vSt"/>
+                            <constraint firstItem="95H-vN-kxT" firstAttribute="centerX" secondItem="6uo-ux-OPZ" secondAttribute="centerX" id="Cha-yh-Jh2"/>
+                            <constraint firstItem="6uo-ux-OPZ" firstAttribute="top" secondItem="95H-vN-kxT" secondAttribute="bottom" constant="64" id="MGd-7X-5tY"/>
+                            <constraint firstItem="95H-vN-kxT" firstAttribute="top" secondItem="RoJ-A6-cQC" secondAttribute="bottom" constant="54" id="NJ5-9q-t2z"/>
+                            <constraint firstItem="RoJ-A6-cQC" firstAttribute="centerX" secondItem="95H-vN-kxT" secondAttribute="centerX" id="cOf-2q-gmp"/>
+                            <constraint firstItem="RoJ-A6-cQC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="zYC-Wx-UMP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mySwitch" destination="95H-vN-kxT" id="Kyq-oM-tek"/>
+                        <outlet property="myTextField" destination="RoJ-A6-cQC" id="Z7T-OE-oBr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
